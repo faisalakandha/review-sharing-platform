@@ -1,2 +1,1 @@
-# components
-React Components with backend
+# Review Sharing Social Network Created with Mern Stack
