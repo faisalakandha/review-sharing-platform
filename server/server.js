@@ -1,7 +1,7 @@
 // server.js
 
 //Includes
-require('./src/db_connection.js');
+require('./src/db-connection.js');
 const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
