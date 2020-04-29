@@ -1,0 +1,28 @@
+{
+  "name": "review-sharing-platform",
+  "version": "1.0.0",
+  "description": "A social review sharing platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faisalakandha/review-sharing-platform.git"
+  },
+  "keywords": [
+    "social-network",
+    "review",
+    "sharing",
+    "platform"
+  ],
+  "author": "H.A.B.M. Faisal Akandha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faisalakandha/review-sharing-platform/issues"
+  },
+  "homepage": "https://github.com/faisalakandha/review-sharing-platform#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
