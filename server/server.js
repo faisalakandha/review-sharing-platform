@@ -9,6 +9,8 @@ const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
+const config = require("./config/key");
+
 // Environment Variables
 dotenv.config(); 
 PORT = process.env.PORT;
