@@ -5,7 +5,7 @@
 2. Node.js
 3. Git
 
-### Installation: (Follo the steps yo)
+### Installation: (Follow the steps yo)
 1. Open terminal. Type and copy-paste : `git clone https://github.com/faisalakandha/review-sharing-platform.git`
 2. cd into review-sharing-platform
 3. Open two terminals
