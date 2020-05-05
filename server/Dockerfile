@@ -6,12 +6,14 @@ FROM node:10.16-alpine
 # Working directory be app
 WORKDIR /usr/app
 
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
 # copy local files to app folder
 COPY . .
 
-# Install dependencies
-RUN yarn install
-
-EXPOSE 3030
+EXPOSE 3000
 
 CMD ["yarn","start"]
