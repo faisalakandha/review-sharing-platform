@@ -25,7 +25,7 @@ Make sure you keep open the two terminals.
 1. cd into client folder and type the following:<br>
 `docker build ./ -t revusha-client` .<br>
 2. After the image is built, you have to run the docker container using the following command:<br>
-` docker run -itd --rm -v ${PWD}:/app  -v /app/node_modules -p 3001:3000 revusha-client`
+`docker run -itd --rm -v ${PWD}:/app  -v /app/node_modules -p 3001:3000 revusha-client`
 
 Visit: http://localhost:3000/ <br> <br>
 Made with Love and Javascript <3
