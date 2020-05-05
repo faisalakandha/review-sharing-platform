@@ -10,12 +10,12 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 
 # install app dependencies
-COPY package*.json ./
-COPY package-lock.json ./
+COPY client/package*.json ./
+COPY client/package-lock.json ./
 RUN npm install
 
 # copy local files to app folder
-COPY . ./
-
+COPY ./client ./
+RUN ls
 # start app
 CMD ["npm","start"]

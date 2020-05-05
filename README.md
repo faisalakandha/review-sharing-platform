@@ -20,7 +20,7 @@ Viola ! You got your site up and running.
 Make sure you keep open the two terminals. 
 
 ### Building with Docker:
-<p>Building the docker containers manually:<br> Sometimes you might want to build all of the docker containers manually. Because that would give the oppourtunity to troubleshoot the platform better. So, let's build the client container first</p><br>
+<p>Building the docker containers manually:<br> Sometimes you might want to build all of the docker containers manually. Because that would give the oppourtunity to troubleshoot the platform better. So, let's build the client container first</p>
 1. cd into client folder and type the following:<br>
 `docker build ./ -t revusha-client` .<br>
 
