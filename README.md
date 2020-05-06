@@ -7,19 +7,12 @@
 
 ### Installation: (Follow the steps yo)
 1. Open terminal. Type and copy-paste : `git clone https://github.com/faisalakandha/review-sharing-platform.git`
-2. cd into review-sharing-platform
-3. Open two terminals
-5. cd into server folder, type `cp ./.env.example ./.env`<br>
-Then type `npm install` and press enter.<br>
-6. type `npm run backend` and press enter. 
-7. In another terminal cd into client folder. This is our frontend.
-8. type `npm install`
-9. type `npm start` 
-10. Enjoy. 
-
+2. Open two terminals and cd into review-sharing-platform in both of them. 
+3. Open two terminals. In one terminal cd into client folder and also run `npm install`
+4. In another terminal Run `npm install` in the root folder.  
+5. After that come back to the root folder and run `npm run dev`. You should see both front end and backend are running. 
+6. Enjoy.<br> 
 Viola ! You got your site up and running.
-Make sure you keep open the two terminals. 
-
 ### Building with Docker:
 <p>Building the docker containers manually:<br> Sometimes you might want to build all of the docker containers manually. Because that would give the oppourtunity to troubleshoot the platform better. So, let's build the client container first</p>
 1. cd into client folder and type the following:<br>
