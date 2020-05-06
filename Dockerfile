@@ -1,4 +1,5 @@
-# Dockerfile for client
+# Author H.A.B.M. Faisal Akandha 
+# Dockerfile for both frontend and backend
 
 # Pull official base image
 FROM node:13.12.0-alpine
