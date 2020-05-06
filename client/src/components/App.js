@@ -8,6 +8,11 @@ import RegisterPage from "./views/RegisterPage/RegisterPage.js";
 import NavBar from "./views/NavBar/NavBar";
 import Footer from "./views/Footer/Footer"
 
+// Pages for Articles/blog
+import PostPage from "./views/PostPage/PostPage";
+import BlogPage from "./views/BlogPage/BlogPage";
+import CreateBlogPage from "./views/BlogPage/Section.js/CreateBlogPage";
+
 //null   Anyone Can go inside
 //true   only logged in user can go inside
 //false  logged in user can't go inside
@@ -21,6 +26,10 @@ function App() {
           <Route exact path="/" component={Auth(LandingPage, null)} />
           <Route exact path="/login" component={Auth(LoginPage, false)} />
           <Route exact path="/register" component={Auth(RegisterPage, false)} />
+		  <Route exact path="/blog" component={Auth(BlogPage, false)} />
+		  <Route exact path="/blog/create" component={Auth(CreateBlogPage, null)} />
+		  <Route exact path="/blog/post/:postId" component={Auth(PostPage, null)} />
+		  
         </Switch>
       </div>
       <Footer />
