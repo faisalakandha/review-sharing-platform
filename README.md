@@ -1,9 +1,18 @@
 # Social Review Sharing Network
+<center><img src="https://raw.githubusercontent.com/faisalakandha/review-sharing-platform/master/client/src/graphics/android-chrome-512x512.png" height="212px" width="212px" /> </center>
 
 ### System Requirement
 1. Docker and docker-compose (Optional)
 2. Node.js
 3. Git
+
+### Tech Stack:
+1. NodeJs
+2. ExpressJs
+3. MongoDB
+4. MongoDB Atlas
+5. React
+6. React Native
 
 ### Installation: (Follow the steps yo)
 1. Open terminal. Type and copy-paste : `git clone https://github.com/faisalakandha/review-sharing-platform.git`
