@@ -412,7 +412,7 @@ class QuillEditor extends React.Component {
         syntax: true,
         toolbar: {
             container: "#toolbar",
-            //id ="toorbar"는  그 위에 B I U S I V F P 이거 있는 곳이다. 
+            //id ="toorbar" This should be changed later. 
             handlers: {
                 insertImage: this.imageHandler,
                 insertVideo: this.videoHandler,
