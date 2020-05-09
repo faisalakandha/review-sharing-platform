@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-//import QuillEditor from '../../../editor/QuillEditor';
+import QuillEditor from '../../../editor/QuillEditor';
 import { Typography, Button, Form, message } from 'antd';
 import axios from 'axios';
 import { useSelector } from "react-redux";
@@ -54,13 +54,13 @@ function CreatePage(props) {
             <div style={{ textAlign: 'center' }}>
                 <Title level={2} > Editor</Title>
             </div>  
-			{/*
+			{
             <QuillEditor
                 placeholder={"Start Posting Something"}
                 onEditorChange={onEditorChange}
                 onFilesChange={onFilesChange}
             />
-			*/}
+			}
 			
             <Form onSubmit={onSubmit}>
                 <div style={{ textAlign: 'center', margin: '2rem', }}>
