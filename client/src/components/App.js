@@ -26,7 +26,7 @@ function App() {
           <Route exact path="/" component={Auth(LandingPage, null)} />
           <Route exact path="/login" component={Auth(LoginPage, false)} />
           <Route exact path="/register" component={Auth(RegisterPage, false)} />
-		  <Route exact path="/blog" component={Auth(BlogPage, false)} />
+		  <Route exact path="/blog" component={Auth(BlogPage, null)} />
 		  <Route exact path="/blog/create" component={Auth(CreateBlogPage, null)} />
 		  <Route exact path="/blog/post/:postId" component={Auth(PostPage, null)} />
 		  
