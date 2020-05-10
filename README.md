@@ -13,7 +13,8 @@
 4. MongoDB Atlas
 5. React
 6. React Native
-
+7. Docker and docker-compose
+ 
 ### Installation: (Follow the steps yo)
 1. Open terminal. Type and copy-paste : `git clone https://github.com/faisalakandha/review-sharing-platform.git`
 2. Open two terminals and cd into review-sharing-platform in both of them. 

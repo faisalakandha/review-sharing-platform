@@ -54,17 +54,17 @@ router.post("/createPost", (req, res) => {
         return res.status(200).json({ success: true, postInfo })
     })
 
-    
-     blog.save((err, response) => {
-         if (err) return res.json({ success: false, err });
-         Blog.find({ _id: response._id })
-             .populate('writer')
-             .exec((err, result) => {
-                 let postInfo = result[0]
-                 if (err) return res.json({ success: false, err });
-                 return res.status(200).json({ success: true,  postInfo });
-             })
-     });
+    // Do not uncomment. If you do you will have bugs !
+//     blog.save((err, response) => {
+//         if (err) return res.json({ success: false, err });
+//         Blog.find({ _id: response._id })
+//             .populate('writer')
+//             .exec((err, result) => {
+//                 let postInfo = result[0]
+//                 if (err) return res.json({ success: false, err });
+//                 return res.status(200).json({ success: true,  postInfo });
+//             })
+//     });
 });
 
 
