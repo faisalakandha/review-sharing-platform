@@ -19,7 +19,7 @@ import CreateBlogPage from "./views/BlogPage/Section.js/CreateBlogPage";
 
 function App() {
   return (
-    <Suspense fallback={(<div>Loading...</div>)}>
+    <Suspense fallback={(<div>Your Content is loading. Please Wait......</div>)}>
       <NavBar />
       <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
         <Switch>
