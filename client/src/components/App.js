@@ -1,18 +1,22 @@
 import React, { Suspense } from 'react';
 import { Route, Switch } from "react-router-dom";
 import Auth from "../hoc/auth";
-// pages for this product
+// Pages for Boilerplate
 import LandingPage from "./views/LandingPage/LandingPage.js";
 import LoginPage from "./views/LoginPage/LoginPage.js";
 import RegisterPage from "./views/RegisterPage/RegisterPage.js";
 import NavBar from "./views/NavBar/NavBar";
 import Footer from "./views/Footer/Footer"
-import MoviesLandingPage from "./views/DiscoverPage/MoviesLandingPage.js";
+
 
 // Pages for Articles/blog
 import PostPage from "./views/PostPage/PostPage";
 import BlogPage from "./views/BlogPage/BlogPage";
 import CreateBlogPage from "./views/BlogPage/Section.js/CreateBlogPage";
+
+// Pages for Movie Discovery
+import MovieDetail from "./views/MovieDetail/MovieDetail"
+import MoviesLandingPage from "./views/DiscoverPage/MoviesLandingPage.js";
 
 //null   Anyone Can go inside
 //true   only logged in user can go inside
@@ -31,7 +35,7 @@ function App() {
 		  <Route exact path="/blog" component={Auth(BlogPage, null)} />
 		  <Route exact path="/blog/create" component={Auth(CreateBlogPage, null)} />
 		  <Route exact path="/blog/post/:postId" component={Auth(PostPage, null)} />
-		  
+		  <Route exact path="/movie/:movieId" component={Auth(MovieDetail, null)} />
         </Switch>
       </div>
       <Footer />
