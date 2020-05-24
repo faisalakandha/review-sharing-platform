@@ -28,14 +28,18 @@ function App() {
       <NavBar />
       <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
         <Switch>
+	  {/* Public Pages */}
           <Route exact path="/" component={Auth(LandingPage, null)} />
-		  <Route exact path="/movies" component={Auth(MoviesLandingPage, null)} />
+          <Route exact path="/movies" component={Auth(MoviesLandingPage, null)} />
+          <Route exact path="/blog" component={Auth(BlogPage, null)} />
+          <Route exact path="/blog/create" component={Auth(CreateBlogPage, null)} />
+          <Route exact path="/blog/post/:postId" component={Auth(PostPage, null)} />
+          <Route exact path="/movie/:movieId" component={Auth(MovieDetail, null)} />
+	
+	 {/* Pages hidden for members */}
           <Route exact path="/login" component={Auth(LoginPage, false)} />
           <Route exact path="/register" component={Auth(RegisterPage, false)} />
-		  <Route exact path="/blog" component={Auth(BlogPage, null)} />
-		  <Route exact path="/blog/create" component={Auth(CreateBlogPage, null)} />
-		  <Route exact path="/blog/post/:postId" component={Auth(PostPage, null)} />
-		  <Route exact path="/movie/:movieId" component={Auth(MovieDetail, null)} />
+								 
         </Switch>
       </div>
       <Footer />
