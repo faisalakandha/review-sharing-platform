@@ -4,6 +4,12 @@ const { User } = require("../models/User");
 
 const { auth } = require("../middleware/auth");
 
+const { list } = require('../controller/user.controller');
+
+router.route('/list')
+  .get(list)
+ // .post(userCtrl.create)
+
 //=================================
 //             User
 //=================================
